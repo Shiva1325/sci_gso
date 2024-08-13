@@ -1,0 +1,44 @@
+.section-header h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 37px;
+}
+
+.properties {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #cacaca;
+    border-radius: 5px;
+}
+
+
+.about-header h2 {
+    font-family: sans-serif;
+    font-size: 45px;
+    margin-left: 20px;
+}
+
+h5 {
+    font-family: sans-serif;
+    margin-left: 20px;
+}
+
+p {
+    font-family: sans-serif;
+    font-weight: 300;
+    margin-left: 20px;
+}
+
+.about-container {
+    margin-top: 5vh;
+}

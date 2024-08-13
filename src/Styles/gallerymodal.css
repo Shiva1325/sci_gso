@@ -1,0 +1,133 @@
+.gallery_modal {
+    min-height: 600px;
+    border-radius: 20px;
+    position: relative;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.gallery_modal__image {
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.gallery_modal__info {
+    background-color: white;
+    display: flex;
+}
+
+.gallery_modal__row {
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.gallery_modal__description-wrapper {
+    margin: 20px 0px;
+    text-align: left;
+    overflow-y: scroll;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.gallery_modal__address {
+    font-size: 1.5rem;
+    color: #737373;
+}
+
+.gallery_modal__description {
+    color: #737373;
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.25rem;
+}
+
+.gallery_modal__close-wrapper {
+    all: unset;
+    position: absolute;
+    cursor: pointer;
+}
+
+
+.gallery_modal__close-icon {
+    width: 40px;
+    height: 40px;
+}
+
+@media only screen {
+    .gallery_modal {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .gallery_modal__image {
+        width: 100%;
+    }
+
+    .gallery_modal__image img {
+        width: 100%;
+        height: 100%;
+
+    }
+
+
+
+    .gallery_modal__info {
+        width: calc(80%);
+        height: 100%;
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery_modal__close-wrapper {
+        right: -20px;
+        top: -30px;
+    }
+
+    .gallery_modal__close-icon {
+        width: 35px;
+        height: 35px;
+        color: #cacaca;
+    }
+}
+
+@media only screen and (min-width: 1281px) {
+    .gallery_modal {
+        width: 80%;
+        height: 100%;
+        max-width: 1800px;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        padding: 30px;
+    }
+
+    .gallery_modal__image {
+        width: calc(60% - 10px);
+        height: 100%;
+    }
+
+    .gallery_modal__info {
+        width: calc(30% - 10px);
+        height: 95%;
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .gallery_modal__close-wrapper {
+        right: 10px;
+        top: 10px;
+    }
+
+    .gallery_modal__close-icon {
+        color: #737373;
+    }
+}

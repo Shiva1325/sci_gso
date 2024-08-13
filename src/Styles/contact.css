@@ -1,0 +1,114 @@
+form {
+    margin-top: 20px;
+}
+
+.ContactForm {
+    text-align: -webkit-center;
+    min-height: 65vh;
+}
+
+.formRow {
+    margin: 10px 0 20px 0;
+}
+
+.formInput {
+    padding: 15px 10px;
+}
+
+u {
+    color: #FFB81C;
+}
+
+u>h1 {
+    color: #003594;
+}
+
+.errorMessage {
+    color: #f45532;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+.submit-btn {
+    padding: 15px 50px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    background-color: #003594;
+    color: #FFB81C;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.recaptchaDiv {
+    display: flex;
+    place-content: center;
+}
+
+.contact-container {
+    margin-top: 4%;
+    padding-top: 20px;
+    text-align: center;
+    width: 60%;
+    box-shadow: rgba(0, 53, 148, 0.5) 10px 15px 25px;
+}
+
+.col-6 {
+    display: flex;
+    margin-top: 10px;
+    place-content: center;
+}
+
+
+.col-6>input {
+    width: 40%;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.col-textarea>textarea {
+    width: 60%;
+    border-radius: 5px;
+    font-size: 15px;
+    height: 70%;
+}
+
+@media (max-width: 768px) {
+    .submit-message {
+        width: 125px;
+        margin-left: 200px;
+    }
+
+    .contact-container {
+        margin-top: 30%;
+        padding-top: 20px;
+        text-align: center;
+        width: 90%;
+        box-shadow: rgba(0, 53, 148, 0.5) 10px 15px 25px;
+    }
+
+    .col-6 {
+        display: inline-flex;
+        margin: 5px;
+        place-content: center;
+    }
+
+
+    .col-6>input {
+        width: 100%;
+        border-radius: 5px;
+        font-size: 15px;
+    }
+
+    .col-textarea>textarea {
+        width: 70%;
+        border-radius: 5px;
+        font-size: 15px;
+        height: 40px
+    }
+
+    .recaptchaDiv>div>div>div {
+        height: 40px;
+        width: 100%;
+    }
+}

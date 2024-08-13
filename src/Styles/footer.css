@@ -1,0 +1,64 @@
+.footer {
+    position: relative;
+    /* top: 6vh; */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #d6d6d6;
+    min-height: 20vh;
+}
+
+.socialMedia {
+    display: inline-flex;
+}
+
+.socialMedia>svg {
+    color: #003594;
+}
+
+.socialMedia>svg:hover {
+    color: #FFB81C;
+    scale: 1.5;
+}
+
+
+svg,
+.socialMedia svg {
+    height: 50px;
+    width: 50px;
+    margin-left: 30px;
+
+}
+
+.copyrightText {
+    position: absolute;
+    bottom: 10px;
+}
+
+@media (max-width: 600px) {
+    .footer {
+        min-height: 100px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    svg,
+    .socialMedia svg {
+        height: 30px;
+        width: 30px;
+        margin-left: 20px;
+
+    }
+
+    .copyrightText {
+        position: absolute;
+        /* bottom: 10px; */
+        font-size: 0.8em;
+    }
+}

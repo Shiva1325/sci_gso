@@ -1,0 +1,332 @@
+.header-container {
+    width: 100%;
+    height: 100vh
+        /* position: relative; */
+}
+
+/* img {
+    width: 1280px;
+    max-height: 720px;
+} */
+
+.header-background-img {
+    background-color: #003594;
+    /* background-color: white; */
+}
+
+.header-background-img img {
+    width: 100%;
+    /* height: 100%; */
+    object-fit: cover;
+    opacity: 0.50;
+    display: block;
+}
+
+.header-content {
+    position: absolute;
+    color: white;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.DeptInfoDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    min-width: 100%;
+}
+
+.DeptInfoDiv div {
+    overflow: hidden;
+}
+
+.UniversityNameDiv {
+    font-size: xx-large;
+    margin-right: 20px;
+}
+
+.schoolInfo {
+    font-size: x-large;
+    min-width: 40%;
+}
+
+.GSOName {
+    text-align: center;
+    opacity: 0;
+    top: -40px;
+    animation: slideDown ease 3s forwards 0.8s;
+    font-size: 55px;
+}
+
+.schoolInfo {
+    text-align: left;
+}
+
+.DeptInfoDiv div:first-of-type {
+    animation: showup 4s forwards 0s;
+}
+
+.DeptInfoDiv div:last-of-type {
+    animation: reveal 4s forwards 0s;
+}
+
+.DeptInfoDiv div:last-of-type h3 {
+    animation: slideout 4s forwards 0s;
+}
+
+.Display-All-Depts {
+    font-size: 2em;
+    margin-top: 10vh;
+}
+
+/* .Display-All-Depts span:first-of-type {
+    animation: showup 6s forwards 0s;
+} */
+
+.Display-All-Depts span {
+    animation: reveal 5s forwards 0s;
+}
+
+
+.blinking-cursor::after {
+    content: '|';
+    color: white;
+    font-weight: bold;
+    animation: blink 1s infinite;
+}
+
+.PittShieldImage {
+    width: 170px;
+    height: auto;
+}
+
+
+
+@keyframes slideUp {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-250px);
+        opacity: 0;
+    }
+}
+
+@keyframes typewriter-reveal {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+
+    20% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 0;
+    }
+}
+
+@keyframes showup {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.5;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideout {
+    0% {
+        opacity: 0;
+        margin-left: -800px;
+    }
+
+    20% {
+        opacity: 0;
+        margin-left: -800px;
+    }
+
+    35% {
+        margin-left: 0px;
+    }
+
+    100% {
+        margin-left: 0px;
+        margin-right: 10%;
+    }
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+        width: 0px;
+    }
+
+    20% {
+        opacity: 1;
+        width: 0px;
+    }
+
+    30% {
+        width: 25%;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        width: 25%;
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(25px);
+        opacity: 1;
+    }
+}
+
+
+
+
+@media (max-width: 780px) {
+    .header-content {
+        top: 6%;
+        width: 100%;
+    }
+
+    .UniversityNameDiv h2 {
+        display: inline-block;
+    }
+
+    .DeptInfoDiv {
+        flex-direction: column;
+        /* margin: 0; */
+        min-width: 100%;
+    }
+
+    .UniversityNameDiv {
+        margin-right: 0;
+        font-size: large;
+        min-width: 100%;
+    }
+
+    .schoolInfo {
+        text-align: center;
+    }
+
+    .schoolInfo h3 {
+        font-size: medium;
+        min-width: 100%;
+    }
+
+    .GSOName {
+        font-size: 1.2em;
+    }
+
+    .Display-All-Depts {
+        font-size: medium;
+        margin-top: 7vh;
+    }
+
+    .header-background-img img {
+        scale: 1.5;
+        height: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-content {
+        top: 6%;
+        width: 100%;
+    }
+
+    .UniversityNameDiv h2 {
+        display: inline-block;
+    }
+
+    .UniversityNameDiv,
+    .schoolInfo {
+        font-size: small;
+        text-align: center;
+    }
+
+    .schoolInfo {
+        font-size: smaller;
+        text-align: center;
+    }
+
+    .GSOName {
+        font-size: 1em;
+    }
+}
+
+/* .header-background-img img {
+    animation: fade-out linear;
+    animation-timeline: scroll();
+} */
+
+@keyframes fade-out {
+    from {
+        scale: 1;
+    }
+
+    to {
+        scale: 0.4;
+        opacity: 0;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        scale: .8;
+        opacity: 0;
+    }
+
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
