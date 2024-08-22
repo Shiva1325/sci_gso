@@ -3,6 +3,7 @@ import Transition from './Transition';
 import "../Styles/about.css";
 import Card from './Card';
 import {properties} from "./MembersData/data"
+import { advisordata } from './MembersData/advisorData';
 
 const About = () => {
     return (
@@ -29,11 +30,22 @@ const About = () => {
                     <h3> Meet the Officers</h3>
                 </div>
                 <div className='section-content'>
-                <div className="properties">
-                    {properties.map((item) => (
-                        <Card data={item} key={item.id} />
-                    ))}
+                    <div className="properties">
+                        {properties.map((item) => (
+                            <Card data={item} key={item.id} />
+                        ))}
+                    </div>
                 </div>
+
+                <div className='section-header'>
+                    <h3>Meet the Advisors </h3>
+                </div>
+                <div className='section-content'>
+                    <div className="properties">
+                        {advisordata.map((item) => (
+                            <Card data={item} key={item.id} />
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>

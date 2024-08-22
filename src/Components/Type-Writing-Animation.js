@@ -31,7 +31,7 @@ export const useTypedDepartments = (dept) => {
                     const timeout1 = setTimeout(() => {
                         setPhase(Phase.Deleting);
                     }, Pause_Interval);
-                    return
+                    return () => clearTimeout(timeout1);
                 
                 case Phase.Deleting: {
                     if(!DepartmentsToType){
@@ -49,9 +49,10 @@ export const useTypedDepartments = (dept) => {
                 }
 
                 default:
-                    const timeout = setTimeout(() => {
-                        setPhase(Phase.Deleting);
-                    }, Pause_Interval);
+                    // const timeout = setTimeout(() => {
+                    //     setPhase(Phase.Deleting);
+                    // }, Pause_Interval);
+                    return
             }
         }, [dept, DepartmentsToType, currIndex, phase]);
         return DepartmentsToType;

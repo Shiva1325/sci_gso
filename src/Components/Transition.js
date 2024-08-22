@@ -1,5 +1,5 @@
-import { duration } from '@material-ui/core';
-import {delay, motion} from 'framer-motion';
+// import { duration } from '@material-ui/core';
+import { motion} from 'framer-motion';
 
 const animation =(variants) => {
     return {

@@ -20,7 +20,7 @@ const Footer = () => {
                 </svg>
             </div> */}
             <FaDiscord className='icon'  />
-            <FacebookIcon color='blue' className='icon' />
+            <FacebookIcon className='icon' />
             <GithubIcon className='icon' />
             <InstagramIcon className='icon'  />
             <LinkedInIcon className='icon'  />

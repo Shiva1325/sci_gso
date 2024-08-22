@@ -26,7 +26,7 @@ const Home = () => {
                         transition={{duration:0.3, ease: "easeInOut"}}
                     >
                         <div className='header-background-img'>
-                            <img src={PittBackgroundImage} />
+                            <img src={PittBackgroundImage} alt='Cathedral Image' />
                         </div>
                         <div className='header-content'>
                             <div className='DeptInfoDiv'>

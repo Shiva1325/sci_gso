@@ -16,9 +16,9 @@ const Navbar = () => {
     }
   };
   const location = useLocation();
-  const [scrollActive, setScrollActive] = useState(location.pathname != '/'?true:false);
+  const [scrollActive, setScrollActive] = useState(location.pathname !== '/'?true:false);
   const changeNavbarBackground = () => {
-    if(location.pathname == '/'){
+    if(location.pathname === '/'){
         if(window.scrollY >= 610) {
           setScrollActive(true);
         }

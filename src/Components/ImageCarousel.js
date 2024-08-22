@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { motion, AnimatePresence, color } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import '../Styles/carousel.css';
 import KeyboardArrowLeftIcon from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight';
@@ -34,13 +34,13 @@ const Carousel = ({ images }) => {
   
   const sliderVariants = {
     incoming: direction => ({
-      x: direction == 'right' ? "100%" : "-100%",
+      x: direction === 'right' ? "100%" : "-100%",
       scale: 1.2,
       opacity: 0
     }),
     active: { x: 0, scale: 1, opacity: 1 },
     exit: direction => ({
-      x: direction == 'right' ? "-100%" : "100%",
+      x: direction === 'right' ? "-100%" : "100%",
       scale: 1,
       opacity: 0.2
     })

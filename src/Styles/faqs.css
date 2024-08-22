@@ -1,0 +1,145 @@
+.faqs-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    min-height: 68vh;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.todo-container {
+    margin-left: 5%;
+}
+
+.card-container {
+    margin-right: 5%;
+}
+
+.todo-container,
+.card-container {
+    margin-top: 4%;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    height: fit-content;
+}
+
+.faqs-container {
+    flex: 1;
+    margin: 0 20px;
+    max-width: 800px;
+}
+
+.accordion-item {
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    border-bottom: 1px solid #cccccc;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-header h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+}
+
+.icon-container svg {
+    height: 20px;
+    width: 20px;
+}
+
+.accordion-content {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #ffffff;
+    line-height: 1.5;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card ul li {
+    margin-bottom: 10px;
+}
+
+.card ul li a {
+    text-decoration: none;
+    color: #0073e6;
+    font-size: 16px;
+}
+
+.card ul li a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 868px) {
+    .faqs-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .todo-container,
+    .faqs-container,
+    .card-container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .todo-container,
+    .card-container {
+        margin-bottom: 20px;
+    }
+
+    .faqs-container {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .faqs-container h1 {
+        font-size: larger;
+    }
+
+    .accordion-header h3 {
+        font-size: small;
+    }
+
+    .icon-container svg {
+        height: 10px;
+        width: 10px;
+    }
+
+    .accordion-content p,
+    .todo-container {
+        font-size: small;
+    }
+}
