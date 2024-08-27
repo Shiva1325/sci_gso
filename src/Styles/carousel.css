@@ -8,7 +8,7 @@
     position: relative;
     border-radius: 10px;
     margin-top: 3%;
-    /* height: 88%; */
+    /* height: 100px; */
     width: 100%;
     overflow: hidden;
 }
@@ -58,7 +58,6 @@
 .left {
     left: 0;
     text-align: left;
-    transform: scale(-1);
 }
 
 .right {
