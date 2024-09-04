@@ -59,7 +59,7 @@ export const properties = [
       role: "Technology Officer",
       phone: "(999)999-9999",
       mail: "skp68@pitt.edu",
-      about: "Shiva is pursuing a Master's degree in Computer Science and has two years of professional experience as a Full Stack Developer. His work has fueled a strong passion for creating web applications and has sparked a keen interest in full stack development and system design. His academic and professional experiences have honed his skills in various web technologies. He earned a Bachelor's degree in Computer Science from IIT Dhanbad. Outside of work, Shiva enjoys playing soccer and snooker.",
+      about: "Hi! I'm Shiva, currently pursuing Master's degree in Computer Science and have two years of professional experience as a Full Stack Developer. My work has fueled a strong passion for creating web applications and has sparked a keen interest in full stack development and system design. My academic and professional experiences have honed my skills in various web technologies. I earned a Bachelor's degree in Computer Science from IIT Dhanbad. Outside of work, I enjoy playing soccer and snooker.",
       department: "Master of Science in Computer Science",
       SocialMediaHandles: {
         email: "skp68@pitt.edu",
