@@ -87,12 +87,12 @@ export const properties = [
     {
       id: 6,
       imageUrl: defaultPic,
-      name: "Test Name",
-      role: "Test Role",
+      name: "Jayden Serenari",
+      role: "Communications Officer",
       phone: "(999)999-9999",
-      mail: "Fake mail Address",
+      mail: "jserenari@pitt.edu",
       about: "This is about section",
-      department: "Test department",
+      department: "Master of Science in Computer Science",
       SocialMediaHandles: {
         email: "",
         github: "",

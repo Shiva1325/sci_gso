@@ -34,6 +34,11 @@
     text-align: left;
 }
 
+.modal__row .feature__circle {
+    position: relative;
+    left: 50%;
+}
+
 .modal__description-wrapper {
     margin: 10px 0;
     text-align: left;
