@@ -52,9 +52,9 @@ const Modal = ({ data, close }) => {
         <motion.div className="modal__row" variants={modalRowVariants}>
           <span className="modal__address">{role}</span>
         </motion.div>
-        <motion.div className="modal__row" variants={modalRowVariants}>
+        {/* <motion.div className="modal__row" variants={modalRowVariants}>
           <span className="modal__address">{phone}</span>
-        </motion.div>
+        </motion.div> */}
         <motion.div className="modal__row" variants={modalRowVariants}>
           <span className="modal__address">{mail}</span>
         </motion.div>
@@ -69,9 +69,9 @@ const Modal = ({ data, close }) => {
         </motion.div>
         <motion.div className="modal__row" variants={modalRowVariants}>
             <Feature iconName={"FaEnvelope"} />
-            <Feature iconName={"FaGithub"} />
-            <Feature iconName={"FaLinkedin"} />
-            <Feature iconName={"FaInstagram"} />
+            <a href={SocialMediaHandles.github} target="_blank"><Feature iconName={"FaGithub"} /> </a>
+            <a href={SocialMediaHandles.linkedin} target="_blank"><Feature iconName={"FaLinkedin"} /></a>
+            <a href={SocialMediaHandles.instagram} target="_blank"><Feature iconName={"FaInstagram"} /></a>
         </motion.div>
         <motion.button
           className="modal__close-wrapper"

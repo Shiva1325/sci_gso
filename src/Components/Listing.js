@@ -7,20 +7,24 @@ const Listing = ({ data, open }) => {
   const { imageUrl, name, role, phone, mail, about, department, SocialMediaHandles } =
     data;
 
+  const handleSocialMediaClick = (event) => {
+    event.stopPropagation();
+  };
+
   return (
     <motion.div className="listing" onClick={open} whileHover={{ scale: 1.1 }}>
       {/* <div className="overlay"></div> */}
       <div className="listing__content">
         <div className="image-container">
-            <div className="listing__image-container">
+          <div className="listing__image-container">
             <img
-                className="listing__image"
-                alt="real estate mansion"
-                src={imageUrl}
+              className="listing__image"
+              alt="real estate mansion"
+              src={imageUrl}
             />
-            </div>
+          </div>
         </div>
-        
+
         <div className="listing__details">
           {/* <div className="listing__type">{name}</div>
           <div className="listing__row">
@@ -35,12 +39,18 @@ const Listing = ({ data, open }) => {
           {/* <div className="listing__row">
             <span className="listing__address">{about}</span>
           </div> */}
-          
-          <div className="listing__row socialmediaHandles">
+
+          <div className="listing__row socialmediaHandles" onClick={handleSocialMediaClick}>
             <Feature iconName={"FaEnvelope"} />
-            <Feature iconName={"FaGithub"} />
-            <Feature iconName={"FaLinkedin"} />
-            <Feature iconName={"FaInstagram"} />
+            <a href={SocialMediaHandles.github} target="_blank" rel="noopener noreferrer">
+              <Feature iconName={"FaGithub"} />
+            </a>
+            <a href={SocialMediaHandles.linkedin} target="_blank" rel="noopener noreferrer">
+              <Feature iconName={"FaLinkedin"} />
+            </a>
+            <a href={SocialMediaHandles.instagram} target="_blank" rel="noopener noreferrer">
+              <Feature iconName={"FaInstagram"} />
+            </a>
           </div>
         </div>
       </div>

@@ -17,7 +17,7 @@
 
 .carousel-images img {
     width: 100%;
-    height: fit-content;
+    height: 100%;
     border-radius: 8px;
     /* border: #fb666675; */
     /* max-height: 10%; */

@@ -5,29 +5,39 @@
     background-color: white;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
 }
 
 .modal__image {
-    object-fit: cover;
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
     border-radius: 20px;
+    margin-bottom: 20px;
 }
 
 .modal__info {
     background-color: white;
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    width: 100%;
 }
 
 .modal__row {
-    margin: 20px 0px;
+    margin: 10px 0;
     display: flex;
     align-items: center;
     text-align: left;
 }
 
 .modal__description-wrapper {
-    margin: 20px 0px;
+    margin: 10px 0;
     text-align: left;
-    overflow-y: scroll;
+    overflow-y: auto;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -44,9 +54,9 @@
 
 .modal__description {
     color: #737373;
-    margin: 0px;
-    padding: 0px;
-    font-size: 1.25rem;
+    margin: 0;
+    padding: 0;
+    font-size: 1.1rem;
 }
 
 .modal__close-wrapper {
@@ -65,21 +75,20 @@
         width: 90%;
         height: auto;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         padding: 15px;
     }
 
     .modal__image {
-        width: 80%;
+        width: 70%;
+        height: 70%;
+        margin-bottom: 20px;
     }
 
     .modal__info {
-        width: calc(90%);
-        height: 100%;
+        width: 100%;
         padding: 20px;
-        flex-direction: column;
-        align-items: flex-start;
     }
 
     .modal__close-wrapper {
@@ -99,23 +108,19 @@
         width: 80%;
         height: 80%;
         max-width: 1800px;
-        justify-content: space-between;
-        align-items: center;
         flex-direction: row;
         padding: 30px;
     }
 
     .modal__image {
-        width: calc(60% - 10px);
-        height: 100%;
+        width: 70%;
+        height: 70%;
+        margin-bottom: 0;
     }
 
     .modal__info {
-        width: calc(30% - 10px);
-        height: 95%;
+        width: 30%;
         padding: 20px;
-        flex-direction: column;
-        align-items: flex-start;
     }
 
     .modal__close-wrapper {
